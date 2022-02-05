@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/scripts.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <title>Memory Game</title>
+</head>
+<body>
+    <section class="section section--left">
+        <p class="paragraph">Select a mode</p>
+        <select class="grid-size" name="grid-size" id="grid-size">
+            <option value="2">Easy</option>
+            <option value="4">Medium</option>
+            <option value="6">Hard</option>
+        </select>
+        <button id="start-button" class="button" type="button">Start</button>
+        <div id="state-game-target" class="state-game-target">
+            <p></p>
+        </div>
+        <div class="lives-container">
+            <img class="lives-container__icon" src="assets/images/heart.svg" alt="lives">
+            <p class="lives-container__text"> = <span id="lives"></span></p>
+        </div>
+    </section>
+
+    <section class="section section--right">
+        <h1 class="main-title">Memory Game</h1>
+        <div id="board" class="board"></div>
+    </section>
+</body>
+</html>
